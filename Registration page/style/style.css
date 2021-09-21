@@ -1,0 +1,39 @@
+body{
+  font-family: 'EB Garamond', serif;
+  background-color: #f2f3f7;
+}
+
+.wrapper{
+  margin: 25% 0 10%;
+  border-radius: 1rem;
+  background-color: #f8f9fb;
+  box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
+}
+.btnEntr{
+  outline: none;
+  background-color: #6987f5;
+  border-radius: 10px;
+  color: #ffffff;
+}
+.btnReg{
+  width: 100%;
+  outline: none;
+  background-color: #6987f5;
+  border-radius: 10px;
+  color: #ffffff;
+}
+.btnEntr:hover, .btnReg:hover{
+  box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
+  background-color: #f8f9fb;
+  color: #6987f5;
+}
+.form{
+  border: none;
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  outline: none;
+  background-color: inherit;
+  box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
+}
