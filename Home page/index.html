@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-3 col-lg-2 p-0">
+                <nav class="navbar p-0">
+                    <div class="title">
+                       <h3 class="username">Имя</h3>
+                        <h5 class="privilege">Привилегия</h5> 
+                    </div>
+                    <div class="navbarContent" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto sidenav text-uppercase" id="navAccordion">
+                          <li class="nav-item active">
+                            <a class="nav-link" href="#">Управление учетной записью</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">Управление пользователями</a>
+                          </li>
+                          <li class="nav-item">
+                            <a
+                              class="nav-link"
+                              href="#"
+                            >управление отчётами</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#">добавить веб-сайт</a>
+                          </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-12 col-md-9 col-lg-10 p-0">
+                <main class="content-wrapper">
+                    <div class="header d-flex justify-content-start">
+                            <div class="headerImg">
+                                <img src="images/site.png" alt="">
+                            </div>
+                            <div class="headerTitle">
+                                <h1>Список сайтов</h1>
+                            </div>
+                    </div>
+                    <div class="container-fluid">
+                        <table width="100%">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Адресс веб-сайта</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td width="90%">site.ru</td>
+                                    <td width="10%" class="text-center"><a href="/"><i class="fa fa-user-o" aria-hidden="true"></i></a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                  </main>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+</body>
+</html>
