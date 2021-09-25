@@ -86,3 +86,14 @@ tbody i:hover{
     height: 20%;
   }
 }
+@media(min-width: 1400px){
+  .navHeader {
+    height: 10%;
+  }
+  .mainHeader{
+    height: 10%;
+  }
+  .collapse{
+    height: 90%;
+  }
+}

@@ -47,7 +47,7 @@ body{
 .placeh:-moz-placeholder{color: #1c1c1c;}
 .placeh:-ms-input-placeholder{color: #1c1c1c;}
 
-@media(max-width: 500px){
+@media(max-width: 550px){
   .form{
     box-shadow: none;
     background-color: #d2dce9;
