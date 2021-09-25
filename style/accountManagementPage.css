@@ -2,7 +2,9 @@ body{
   font-family: 'EB Garamond', serif;
   background-color: #f2f3f7;
 }
-
+.title{
+  color: #505258;
+}
 .wrapper{
   margin: 25% 0 10%;
   border-radius: 1rem;
@@ -37,3 +39,7 @@ body{
   background-color: inherit;
   box-shadow: 0.6em 0.6em 1.2em #d2dce9, -0.5em -0.5em 1em #ffffff;
 }
+.placeh::-webkit-input-placeholder{color: #1c1c1c;}
+.placeh::-moz-placeholder{color: #1c1c1c;}
+.placeh:-moz-placeholder{color: #1c1c1c;}
+.placeh:-ms-input-placeholder{color: #1c1c1c;}

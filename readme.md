@@ -1,4 +1,4 @@
-# GUi
+# GUI
 
 GUI development
 
