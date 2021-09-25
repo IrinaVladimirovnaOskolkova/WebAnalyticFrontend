@@ -14,13 +14,14 @@ body {
   height: 100%;
 }
 
-.navTitle {
+.navHeader {
+  height: 15%;
   padding: 1% 5%;
-  height: 12%;
   background-color: #32343a;
   color: #f2f3f7;
 }
 .collapse {
+  height: 85%;
   align-items: start;
   padding: 4%;
   background-color: #3d3f45;
@@ -40,16 +41,19 @@ body {
   margin-right: 1rem;
 }
 .mainHeader{
+  height: 15%;
     padding: 1% 2%;
-    height: 12%;
     background-color: #FFFFFF;
     -webkit-box-shadow: 0px -5px 5px -5px rgba(133, 144, 152, 0.6) inset;
 -moz-box-shadow: 0px -5px 5px -5px rgba(133, 144, 152, 0.6) inset;
 box-shadow: 0px -5px 5px -5px rgba(133, 144, 152, 0.6) inset;
 }
+.mainImg{
+  width: 5%;
+  margin-right: 2rem;
+}
 .mainImg img{
-    height: 80%;
-    margin-right: 1rem;
+    height: 90%;
 }
 .mainTable{
     padding: 1% 2%;
@@ -74,9 +78,11 @@ tbody i{
 tbody i:hover{
     font-weight: bolder;
 }
-
-@media (min-width: 750px) {
-  .collapse {
-    min-height: 1000%;
+@media (max-width: 767px) {
+  .navHeader {
+    height: 20%;
+  }
+  .mainHeader{
+    height: 20%;
   }
 }
