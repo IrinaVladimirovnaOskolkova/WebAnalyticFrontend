@@ -22,7 +22,7 @@
         <div class="col-12 col-md-6 col-lg-5">
           <div class="wrapper">
               <div class="btnBlock text-end">
-                  <a href="/" class="btn btnEntr m-4">Войти</a>
+                  <a href="authorization.html" class="btn btnEntr m-4">Войти</a>
               </div>
               <div class="formBlock p-4">
                   <div class="title text-center mb-5">
@@ -30,19 +30,20 @@
                     </div>
                   <form>
                     <div class="mb-3">
-                        <input type="text" class="form" name="name" id="exampleInputName" aria-describedby="nameHelp" placeholder="Имя">
+                        <input type="text" class="form" name="name" id="InputName" aria-describedby="nameHelp" placeholder="Имя" onkeyup="validationName();">
                     </div>
                     <div class="mb-3">
-                        <input type="text" class="form" name="login" id="exampleInputUser" aria-describedby="userHelp" placeholder="Логин">
+                        <input type="text" class="form" name="login" id="InputLogin" aria-describedby="userHelp" placeholder="Логин" onkeyup="validationLogin();">
                     </div>
                     <div class="mb-3">
-                        <input type="password" class="form" name="passord" id="exampleInputPassword" aria-describedby="passwordHelp" placeholder="Пароль">
+                        <input type="password" class="form" name="passord" id="InputPassword" aria-describedby="passwordHelp" placeholder="Пароль" onkeyup="validationPassword();">
                     </div>
                     <div class="mb-5">
-                        <input type="password" class="form" name="passwordConfirm" id="exampleInputPassConfir" aria-describedby="passConfirdHelp" placeholder="Подтверждение пароля">
+                        <input type="password" class="form" name="passwordConfirm" id="InputPassConfirm" aria-describedby="passConfirdHelp" placeholder="Подтверждение пароля" onkeyup='validationPassword();'>
+                        <span id="message" class=""></span>
                     </div>
                     <div class="btnBlock mb-4">
-                        <a href="/" class="btn btn-lg btnReg">Зарегистрироваться</a>
+                        <a data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-lg disabled" id="btnReg">Зарегистрироваться</a>
                     </div>
                   </form>
               </div>
@@ -50,7 +51,29 @@
         </div>
       </div>
     </div>
+
+    <!-- Scrollable modal -->
+    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body text-center text-white">
+            <p>Ответ сервера</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn"
+              data-bs-dismiss="modal"
+            >
+              Закрыть
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="app/script.js"></script>
   </body>
 
 </html>

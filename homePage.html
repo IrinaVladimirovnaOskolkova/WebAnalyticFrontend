@@ -24,7 +24,7 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <header class="col-md-5 col-lg-2 p-0">
+        <header class="col-md-5 col-lg-3 col-xxl-2 p-0" >
           <nav class="sidebar-sticky navbar-expand">
             <div class="navHeader">
               <div class="navTitle">
@@ -86,7 +86,7 @@
                 <tr>
                   <td width="90%">site.com</td>
                   <td width="10%" class="text-center">
-                    <a data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa fa-user-o" aria-hidden="true"></i></a>
+                    <a data-bs-toggle="modal" data-bs-target="#Modal"><i class="fa fa-user-o" aria-hidden="true"></i></a>
                   </td>
                 </tr>
               </tbody>
@@ -98,30 +98,27 @@
     </div>
 
     <!-- Scrollable modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Cписок пользователей, имеющих доступ к просмотру данного веб-сайта</h5>
-        </div>
-        <div class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptatum odio similique voluptatibus soluta commodi nobis, aliquid perspiciatis suscipit corrupti, quasi architecto. Voluptatibus sequi non ipsam. Dolorem vitae dolores modi.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum aperiam sint nemo porro nihil eligendi. Cum at sapiente ex accusamus tempora. Numquam, molestias illo ad assumenda quibusdam similique? In, atque.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi nam iure beatae reiciendis nobis non aut, laudantium, vel in ducimus quo magni molestiae dolore atque necessitatibus quia nostrum officia explicabo.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem dolorem nostrum nihil maxime inventore reprehenderit labore quae corporis quam optio explicabo quisquam, natus eaque ad maiores, totam dicta? Laudantium, magnam!
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta, nulla atque! Ad ab, reiciendis quos sed consequuntur facere quae? Non, doloremque enim. Suscipit totam culpa voluptates aliquam, fugit eius. Eveniet?
-        </div>
-        <div class="modal-footer">
-          <button
-            type="button"
-            class="btn btn-secondary"
-            data-bs-dismiss="modal"
-          >
-            Закрыть
-          </button>
+    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content text-white">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Cписок пользователей, имеющих доступ к просмотру данного веб-сайта</h5>
+          </div>
+          <div class="modal-body">
+            <p>Ответ сервера</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn"
+              data-bs-dismiss="modal"
+            >
+              Закрыть
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-    </div>
+      </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
