@@ -37,6 +37,9 @@ body{
   background-color: #f8f9fb;
   color: #6987f5;
 }
+#btnAuthoriz{
+  display: none;
+}
 .form{
   border: none;
   display: block;
