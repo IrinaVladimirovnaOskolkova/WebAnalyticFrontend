@@ -93,12 +93,11 @@ btnReg.addEventListener("click", function(){
           btnModalClose.onclick = () => {
             document.location.href = "authorization.html"
           };
-          window.onclick = () => {
+          window.onclick =  () => {
             btnModalClose.onclick();
             window.onclick = null;
             message.innerHTML = "";
           };
-
         }
       }
       else {
@@ -110,3 +109,4 @@ btnReg.addEventListener("click", function(){
   request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
   request.send(name, login, password);
 });
+

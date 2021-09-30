@@ -26,6 +26,9 @@ body {
   padding: 4%;
   background-color: #3d3f45;
 }
+/*.admin{
+  display: none;
+}*/
 .navbar-nav {
   width: 100%;
 }
