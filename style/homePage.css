@@ -3,7 +3,6 @@ html {
 }
 
 body {
-  overflow-y: hidden;
   font-family: "EB Garamond", serif;
   background-color: #E6E8EC;
   height: 100%;
@@ -77,6 +76,10 @@ tbody tr td{
 tbody i{
     cursor: pointer;
     transition: all .3s;
+}
+tbody a{
+  text-decoration: none;
+  color: #6987f5;
 }
 tbody i:hover{
     font-weight: bolder;

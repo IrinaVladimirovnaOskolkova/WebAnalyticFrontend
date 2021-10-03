@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/home.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="images/userManagement.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,8 +18,8 @@
       href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style/homePage.css" />
-    <title>Главная страница</title>
+    <link rel="stylesheet" href="style/userManagement.css" />
+    <title>Страница управления пользователями</title>
   </head>
   <body>
     <div class="container-fluid">
@@ -36,31 +36,38 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav flex-column">
                 <li class="nav-item mt-3">
-                  <a href="accountManagementPage.html" target="_blank" class="nav-link"
+                  <a href="homePage.html" target="_blank" class="nav-link"
                     ><i class="fa fa-address-card-o" aria-hidden="true"></i
-                    >Управление учётной записью</a
-                  >
-                </li>
-                <li class="nav-item admin">
-                  <a href="userManagementPage.html" class="nav-link"
-                    ><i class="fa fa-users" aria-hidden="true"></i>Управление
-                    пользователями</a
-                  >
-                </li>
-                <li class="nav-item admin">
-                  <a href="" class="nav-link"
-                    ><i class="fa fa-file-text-o" aria-hidden="true"></i
-                    >Управление отчётами</a
-                  >
-                </li>
-                <li class="nav-item mb-5">
-                  <a href="" class="nav-link"
-                    ><i class="fa fa-eercast" aria-hidden="true"></i>Добавить
-                    веб-сайт</a
+                    >Главная страница</a
                   >
                 </li>
               </ul>
+
+              <div class="formBlock mt-3 text-center text-white ps-2 pe-2">
+                <div class="title">
+                    <h4><b>Регистрация нового пользователя</b></h4>
+                  </div>
+                <form>
+                  <div class="mb-3">
+                      <input type="text" class="form" name="name" id="InputName" aria-describedby="nameHelp" placeholder="Имя" onkeyup="validationName();">
+                  </div>
+                  <div class="mb-3">
+                      <input type="text" class="form" name="login" id="InputLogin" aria-describedby="userHelp" placeholder="Логин" onkeyup="validationLogin();">
+                  </div>
+                  <div class="mb-3">
+                      <input type="password" class="form" name="passord" id="InputPassword" aria-describedby="passwordHelp" placeholder="Пароль" onkeyup="validationPassword();">
+                  </div>
+                  <div class="mb-3">
+                      <input type="password" class="form" name="passwordConfirm" id="InputPassConfirm" aria-describedby="passConfirdHelp" placeholder="Подтверждение пароля" onkeyup='validationPassword();'>
+                      <span id="message" class=""></span>
+                  </div>
+                  <div class="btnBlock">
+                      <a class="btn btn-lg disabled" id="btnReg">Зарегистрировать</a>
+                  </div>
+                </form>
             </div>
+            </div>
+            
           </nav>
         </header>
         <!-- end header -->
@@ -74,10 +81,10 @@
             "
           >
             <div class="mainImg">
-              <img src="images/site.png" alt="site" />
+              <img src="images/user.png" alt="site" />
             </div>
             <div class="mainTitle d-flex align-items-center">
-              <h1>Анализ посещения веб-сайтов</h1>
+              <h1>Управление пользователями</h1>
             </div>
           </div>
 
@@ -85,7 +92,7 @@
             <table class="tabl" id="tableSite">
               <thead>
                 <tr>
-                  <th colspan="2">Список адресов веб-сайтов</th>
+                  <th colspan="2">Список пользователей</th>
                 </tr>
               </thead>
               <tbody id="tableSiteBody">
@@ -100,40 +107,11 @@
       </div>
     </div>
 
-    <!-- Scrollable modal -->
-    <div
-      class="modal fade"
-      id="ModalHome"
-      tabindex="-1"
-      aria-labelledby="ModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-          <div class="modal-header text-white text-center">
-            <h5 class="modal-title">Редактирование списка пользователей, имеющих доступ к данному сайту</h5>
-          </div>
-          <div class="modal-body text-white" id="modalBody">
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn"
-              id="btnModalClose"
-              data-bs-dismiss="modal"
-            >
-              Закрыть
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
       crossorigin="anonymous"
     ></script>
-    <script src="app/scriptHome.js"></script>
+    <script src="app/userManagementPage.js"></script>
   </body>
 </html>

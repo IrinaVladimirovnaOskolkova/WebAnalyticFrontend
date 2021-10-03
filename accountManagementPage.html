@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="images/Management.png" type="image/x-icon" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,6 +23,10 @@
         <div class="col-12 col-lg-8">
           <div class="wrapper">
               <div class="formBlock p-4">
+                  <div class="text-end">
+                    <a data-bs-toggle="modal" data-bs-target="#ModalDel" class="btn btn-lg btnHeader admin" title = "Удалить учетную запись"><i class="fa fa-trash" aria-hidden="true"></i>
+                    </a>
+                  </div>
                   <div class="title text-center mb-3 mb-lg-5">
                       <h3><b>Управление учетной записью</b></h3>
                     </div>
@@ -29,13 +34,13 @@
                       <div class="col-12 col-lg-6 col-lg-5">
                         <form>
                     <div class="mb-1 mb-md-3">
-                      <input type="text" class="form" name="login" id="exampleInputLogin" aria-describedby="nameHelp" placeholder="Логин" disabled>
+                      <input type="text" class="form" name="login" id="InputLogin" aria-describedby="nameHelp" placeholder="Логин" disabled>
                   </div>
                   <div class="mb-1 mb-md-3">
-                    <input type="text" class="form" name="data" id="exampleInputData" aria-describedby="nameHelp" placeholder="Дата регистрация" disabled>
+                    <input type="text" class="form" name="data" id="InputData" aria-describedby="nameHelp" placeholder="Дата регистрация" disabled>
                 </div>
                 <div class="mb-3 mb-md-5">
-                  <input type="text" class="form" name="access" id="exampleInputAccess" aria-describedby="nameHelp" placeholder="Привилегия" disabled>
+                  <input type="text" class="form" name="access" id="InputAccess" aria-describedby="nameHelp" placeholder="Привилегия" disabled>
               </div>
                         </form>
                       </div>
@@ -43,30 +48,63 @@
                       <div class="col-12 col-lg-6 col-lg-5">
 <form>
                     <div class="mb-1 mb-md-3">
-                        <input type="text" class="form placeh" name="name" id="exampleInputName" aria-describedby="nameHelp" placeholder="Имя">
+                        <input type="text" class="form placeh" name="name" id="InputName" aria-describedby="nameHelp" placeholder="Имя" onkeyup="validationName();">
                     </div>
                     <div class="mb-1 mb-md-3">
-                        <input type="password" class="form placeh" name="passord" id="exampleInputPassword" aria-describedby="passwordHelp" placeholder="Новый пароль">
+                        <input type="password" class="form placeh" name="password" id="InputPassword" aria-describedby="passwordHelp" placeholder="Новый пароль" onkeyup="validationPassword();">
                     </div>
                     <div class="mb-4">
-                        <input type="password" class="form placeh" name="passwordConfirm" id="exampleInputPassConfir" aria-describedby="passConfirdHelp" placeholder="Подтверждение пароля">
+                        <input type="password" class="form placeh" name="passwordConfirm" id="InputPassConfirm" aria-describedby="passConfirdHelp" placeholder="Подтверждение пароля" onkeyup='validationPassword();'>
+                        <span id="message" class=""></span>
                     </div>
                   </form>
-                  
                       </div>
                       <div class="btnBlock mb-4 col-12 col-md-5">
-                        <a href="/" class="btn btn-lg btnReg">Изменить данные</a>
+                        <a data-bs-toggle="modal" data-bs-target="#Modal" class="btn btn-lg  disabled" id="btnReg">Изменить данные</a>
                     </div>
-                    </div>
-                  
-                    
+                    </div>    
               </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- Modal -->
+  <div class="modal fade" id="ModalDel" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-body text-center text-white">
+          <p>ВЫ ДЕЙСТВИТЕЛЬНО ХОТИТЕ УДАЛИТЬ СТРАНИЦУ?</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" id="btnYesDel">ДА</button>
+          <button type="button" class="btn btnNodel" data-bs-dismiss="modal">НЕТ</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- Scrollable modal -->
+    <div class="modal fade" id="Modal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-body text-center text-white">
+            <p id="serverResponse">Пожалуйста, подождите...</p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn" id="btnModalClose"
+              data-bs-dismiss="modal"
+            >
+              Закрыть
+            </button>
+          </div>
+        </div>
+      </div>
+      </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-    <script src="app/scriptManagement.js"></script>
+   <script src="app/scriptManagement.js"></script>
   </body>
 
 </html>

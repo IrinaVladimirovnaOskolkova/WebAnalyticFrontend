@@ -1,0 +1,132 @@
+html {
+    height: 100%;
+  }
+  
+  body {
+    font-family: "EB Garamond", serif;
+    background-color: #E6E8EC;
+    height: 100%;
+  }
+  .container-fluid,
+  .row,
+  .sidebar-sticky {
+    height: 100%;
+  } 
+  .navHeader {
+    height: 15%;
+    padding: 1% 5%;
+    background-color: #32343a;
+    color: #f2f3f7;
+  }
+  .collapse {
+      height: 85%;
+    align-items: start;
+    padding: 4%;
+    background-color: #3d3f45;
+    flex-direction: column;
+  }
+  /*.admin{
+    display: none;
+  }*/
+  .navbar-nav {
+    width: 100%;
+  }
+  .nav-link {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #77797e;
+  }
+  .nav-link:hover {
+    color: #ffffff;
+  }
+  .nav-link i {
+    margin-right: 1rem;
+  }
+  #btnReg{
+    width: 100%;
+    outline: none;
+    background-color: #6987f5;
+    border-radius: 10px;
+    color: #ffffff;
+  }
+  #btnReg.disabled{
+    width: 100%;
+    pointer-events: none;
+    color: #505258;
+    background-color: inherit;
+  }
+#btnReg:hover{
+    background-color: #f8f9fb;
+    color: #6987f5;
+  }
+  .form{
+    border: none;
+    display: block;
+    width: 100%;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    outline: none;
+  }
+  .mainHeader{
+    height: 15%;
+      padding: 1% 2%;
+      background-color: #FFFFFF;
+      -webkit-box-shadow: 0px -5px 5px -5px rgba(133, 144, 152, 0.6) inset;
+  -moz-box-shadow: 0px -5px 5px -5px rgba(133, 144, 152, 0.6) inset;
+  box-shadow: 0px -5px 5px -5px rgba(133, 144, 152, 0.6) inset;
+  }
+  .mainImg{
+    width: 5%;
+    margin-right: 2rem;
+  }
+  .mainImg img{
+      height: 90%;
+  }
+  .mainTable{
+      padding: 1% 2%;
+  }
+  .tabl{
+      width: 100%;
+  }
+  thead tr th{
+      font-size: 1.3rem;
+      padding: 1%;
+      border-bottom: 3px solid #3d3f45;
+  }
+  tbody tr td{
+      font-size: 1.3rem;
+      padding: 1%;
+      border-bottom: 1px solid #77797e;
+  }
+  tbody i{
+      cursor: pointer;
+      transition: all .3s;
+  }
+  tbody a{
+    text-decoration: none;
+    color: #6987f5;
+  }
+  tbody i:hover{
+      font-weight: bolder;
+      color: #eb351d;
+  }
+  @media (max-width: 767px) {
+    .navHeader {
+      height: 15%;
+    }
+    .mainHeader{
+      height: 20%;
+    }
+  }
+  @media(min-width: 1400px){
+    .navHeader {
+      height: 10%;
+    }
+    .mainHeader{
+      height: 10%;
+    }
+    .collapse{
+      height: 90%;
+    }
+  }
+  
