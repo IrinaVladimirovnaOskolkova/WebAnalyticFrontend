@@ -54,7 +54,7 @@
                   >
                 </li>
                 <li class="nav-item mb-5">
-                  <a href="" class="nav-link"
+                  <a data-bs-toggle="modal" data-bs-target="#modalWeb" class="nav-link modalBtn"
                     ><i class="fa fa-eercast" aria-hidden="true"></i>Добавить
                     веб-сайт</a
                   >
@@ -100,7 +100,7 @@
       </div>
     </div>
 
-    <!-- Scrollable modal -->
+    <!-- Редактирование доступа -->
     <div
       class="modal fade"
       id="ModalHome"
@@ -118,7 +118,7 @@
           <div class="modal-footer">
             <button
               type="button"
-              class="btn"
+              class="btn btn-primary"
               id="btnModalClose"
               data-bs-dismiss="modal"
             >
@@ -127,6 +127,34 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <!-- Доавление веб-сайта -->
+    <div class="modal fade" id="modalWeb" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-white text-center">
+            <h5 class="modal-title" id="staticBackdropLabel">Добавление веб-сайта</h5>
+            <h6 class="serverStatus" id="text"></h6>
+          </div>
+          <div class="modal-body">
+            <form class="d-flex justify-content-between">
+              <input type="text" class="form m-0" name="siteAddr" id="InputAddr" aria-describedby="addrHelp" placeholder="Адрес веб-сайта" onkeyup="validationSiteAddr();">
+              <button type="button" class="btn btn-primary m-0 btnModal disabled " id="btnModal">Добавить</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="btnClose"
+              data-bs-dismiss="modal"
+            >
+              Закрыть
+            </button>
+          </div>
+    </div>
+  </div>
     </div>
 
     <script

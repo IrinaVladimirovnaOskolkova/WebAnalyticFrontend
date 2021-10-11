@@ -84,6 +84,9 @@ tbody a{
 tbody i:hover{
     font-weight: bolder;
 }
+.modalBtn{
+  cursor: pointer
+}
 .modal-content{
   border: none;
   border-radius: 30px;
@@ -92,19 +95,37 @@ tbody i:hover{
 }
 .modal-header{
   border-bottom: 1px solid #6b6c6e;
+  display: initial;
+}
+.serverStatus{
+  color: red;
 }
 .modal-footer{
   border-top: 1px solid #6b6c6e;
 }
 .modal-footer .btn{
   outline: none;
-  background-color: #6987f5;
-  border-radius: 10px;
-  color: #ffffff;
 }
-.modal-footer .btn:hover{
-  background-color: #f8f9fb;
-  color: #6987f5;
+.form{
+  border: none;
+  display: inline-block;
+  width: 80%;
+  padding: .3rem 1rem .5rem;
+  border-radius: 3px;
+  outline: none;
+  box-shadow: 0.6em 0.6em 1.2em #8e8f92, -0.5em -0.5em 1em #8b8f94;
+  background-color: #9c9ea1;
+}
+.form::placeholder{
+  color: #fff;
+}
+.btnModal{
+  box-shadow: 0.6em 0.6em 1.2em #6b6c6e, -0.5em -0.5em 1em #8b8f94;
+}
+.modal-body .disabled {
+  background-color: inherit;
+  color:#fff;
+  border: none;
 }
 @media (max-width: 767px) {
   .navHeader {
